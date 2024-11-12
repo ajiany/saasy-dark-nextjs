@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import '/public/globals.css';
 import '/public/tailwind-build.css';
-
+import Script from 'next/script';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -36,10 +36,11 @@ export default function RootLayout({
           referrerPolicy="no-referrer"
         />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-black tw-text-white`}>
         {children}
+        <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js" strategy="beforeInteractive" />
+        <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js" strategy="beforeInteractive" />
+        <Script src="/lib/index.js" strategy="afterInteractive" />
       </body>
     </html>
   );

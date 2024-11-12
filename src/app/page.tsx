@@ -1,57 +1,8 @@
-"use client";
-
 import Image from "next/image";
 import Head from "next/head";
-import { useEffect } from "react";
 
 export default function Home() {
-  useEffect(() => {
-    const loadScript = (src: string, integrity?: string): Promise<void> => {
-      return new Promise((resolve, reject) => {
-        if (document.querySelector(`script[src="${src}"]`)) {
-          resolve();
-          return;
-        }
 
-        const script = document.createElement("script");
-        script.src = src;
-        if (integrity) {
-          script.integrity = integrity;
-          script.crossOrigin = "anonymous";
-          script.referrerPolicy = "no-referrer";
-        }
-        
-        script.onload = () => resolve();
-        script.onerror = () => reject();
-        document.body.appendChild(script);
-      });
-    };
-
-    const initScripts = async () => {
-      try {
-        // Load GSAP first
-        await loadScript(
-          "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js",
-          "sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
-        );
-
-        // Then load ScrollTrigger
-        await loadScript(
-          "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js",
-          "sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
-        );
-
-        // Finally load your local script
-        await loadScript("/lib/index.js");
-      } catch (error) {
-        console.error("Error loading scripts:", error);
-      }
-    };
-
-    initScripts();
-
-    // No need for cleanup as we're using script.onload
-  }, []);
 
   return (
     <>
