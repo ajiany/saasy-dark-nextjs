@@ -496,7 +496,7 @@ export default function Home() {
                         className="tw-max-h-[650px] tw-max-w-[850px] tw-overflow-hidden tw-rounded-lg tw-shadow-lg tw-shadow-[rgba(170,49,233,0.44021358543417366)]"
                     >
                         <img
-                            src="./assets/images/home/dash.png"
+                            src="/assets/images/home/dash.png"
                             alt="coding"
                             className="tw-h-full tw-w-full tw-object-cover"
                         />
@@ -585,7 +585,7 @@ export default function Home() {
                         className="tw-max-h-[650px] tw-max-w-[850px] tw-overflow-hidden tw-rounded-lg tw-shadow-lg tw-shadow-[rgba(170,49,233,0.44021358543417366)]"
                     >
                         <img
-                            src="./assets/images/home/insights.png"
+                            src="/assets/images/home/insights.png"
                             alt="coding"
                             className="tw-h-full tw-w-full tw-object-cover"
                         />
@@ -595,7 +595,9 @@ export default function Home() {
         </section>
 
 
-        <section className="tw-mt-5 tw-flex tw-min-h-[80vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%]">
+        <section
+            className="tw-mt-5 tw-flex tw-min-h-[80vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%]"
+        >
             <h3
                 className="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-2xl"
             >
@@ -618,7 +620,7 @@ export default function Home() {
                             className="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
                         >
                             <img
-                                src="./assets/images/people/women.jpg"
+                                src="/assets/images/people/women.jpg"
                                 className="tw-h-full tw-w-full tw-object-cover"
                                 alt="women"
                             />
@@ -643,7 +645,7 @@ export default function Home() {
                             className="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
                         >
                             <img
-                                src="./assets/images/people/man.jpg"
+                                src="/assets/images/people/man.jpg"
                                 className="tw-h-full tw-w-full tw-object-cover"
                                 alt="man"
                             />
@@ -667,7 +669,7 @@ export default function Home() {
                             className="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
                         >
                             <img
-                                src="./assets/images/people/man2.jpg"
+                                src="/assets/images/people/man2.jpg"
                                 className="tw-h-full tw-w-full tw-object-cover"
                                 alt="man"
                             />
@@ -692,7 +694,7 @@ export default function Home() {
                             className="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
                         >
                             <img
-                                src="./assets/images/people/women.jpg"
+                                src="/assets/images/people/women.jpg"
                                 className="tw-h-full tw-w-full tw-object-cover"
                                 alt="man"
                             />
@@ -717,7 +719,7 @@ export default function Home() {
                             className="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
                         >
                             <img
-                                src="./assets/images/people/man.jpg"
+                                src="/assets/images/people/man.jpg"
                                 className="tw-h-full tw-w-full tw-object-cover"
                                 alt="man"
                             />
@@ -742,7 +744,7 @@ export default function Home() {
                             className="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
                         >
                             <img
-                                src="./assets/images/people/man2.jpg"
+                                src="/assets/images/people/man2.jpg"
                                 className="tw-h-full tw-w-full tw-object-cover"
                                 alt="man"
                             />
@@ -873,7 +875,7 @@ export default function Home() {
                         className="tw-h-[250px] tw-w-full tw-overflow-hidden tw-rounded-md"
                     >
                         <img
-                            src="./assets/images/home/forest.jpg"
+                            src="/assets/images/home/forest.jpg"
                             alt="article image"
                             className="tw-h-full tw-w-full tw-object-cover tw-transition-transform tw-duration-[0.3s] hover:tw-scale-[1.04]"
                             srcSet=""
@@ -901,7 +903,7 @@ export default function Home() {
                         className="tw-h-[250px] tw-w-full tw-overflow-hidden tw-rounded-md"
                     >
                         <img
-                            src="./assets/images/home/mountain.jpg"
+                            src="/assets/images/home/mountain.jpg"
                             alt="article image"
                             className="tw-h-full tw-w-full tw-object-cover tw-transition-transform tw-duration-[0.3s] hover:tw-scale-[1.04]"
                             srcSet=""
@@ -929,7 +931,7 @@ export default function Home() {
                         className="tw-h-[250px] tw-w-full tw-overflow-hidden tw-rounded-md"
                     >
                         <img
-                            src="./assets/images/home/photography.jpg"
+                            src="/assets/images/home/photography.jpg"
                             alt="article image"
                             className="tw-h-full tw-w-full tw-object-cover tw-transition-transform tw-duration-[0.3s] hover:tw-scale-[1.04]"
                             srcSet=""
@@ -1090,7 +1092,7 @@ export default function Home() {
                 className="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full"
             >
                 <img
-                    src="./assets/logo/logo.png"
+                    src="/assets/logo/logo.png"
                     alt="logo"
                     srcSet=""
                     className="tw-max-w-[120px]"
